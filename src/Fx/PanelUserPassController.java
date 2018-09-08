@@ -1,4 +1,4 @@
-
+/* aca creoare el interface del passUsers*/
 package Fx;
 
 import interfazuserpass.direcciones;
