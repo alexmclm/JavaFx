@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fx.PanelNewCuentaController">
+   <children>
+      <GridPane layoutX="16.0" layoutY="17.0" prefHeight="296.0" prefWidth="325.0">
+         <children>
+            <TextField fx:id="txtNombre" GridPane.columnIndex="1" />
+            <TextField fx:id="txtApellido" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtEdad" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtCodUser" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="txtPassUser" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="Nombre" />
+            <Label text="Apellido" GridPane.rowIndex="1" />
+            <Label text="Edad" GridPane.rowIndex="2" />
+            <Label text="Genero" GridPane.rowIndex="3" />
+            <Label text="Email" GridPane.rowIndex="4" />
+            <Label text="Codigo Nuevo:" GridPane.rowIndex="5" />
+            <Label text="Pass Usuario" GridPane.rowIndex="6" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <RadioButton fx:id="btonFemenino" mnemonicParsing="false" text="Femenino" />
+                  <RadioButton fx:id="btonMasculino" mnemonicParsing="false" text="Masculino" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </HBox>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="94.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="223.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Separator layoutX="349.0" orientation="VERTICAL" prefHeight="310.0" prefWidth="6.0" />
+      <Button fx:id="btonEliminar" layoutX="368.0" layoutY="143.0" mnemonicParsing="false" onAction="#limpiarCuenta" prefHeight="7.0" prefWidth="56.0" text="Limpiar" />
+      <Button fx:id="btonCrear" layoutX="374.0" layoutY="86.0" mnemonicParsing="false" onAction="#crearCuenta" text="Crear" />
+      <Button fx:id="btonVolver" layoutX="371.0" layoutY="197.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+   </children>
+</AnchorPane>

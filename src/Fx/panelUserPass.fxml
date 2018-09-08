@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fx.PanelUserPassController">
+   <children>
+      <PasswordField fx:id="txtPass" layoutX="99.0" layoutY="151.0" />
+      <TextField fx:id="txtUser" layoutX="99.0" layoutY="77.0" />
+      <Label layoutX="153.0" layoutY="48.0" text="Usuario" />
+      <Label layoutX="153.0" layoutY="121.0" text="Password" />
+      <Button fx:id="btonIngresar" layoutX="29.0" layoutY="205.0" mnemonicParsing="false" onAction="#Ingresar" text="Ingresar" />
+      <Button fx:id="btonLimpiar" layoutX="138.0" layoutY="205.0" mnemonicParsing="false" onAction="#limpiar" text="Limpiar" />
+      <Button fx:id="btonCuenta" layoutX="238.0" layoutY="205.0" mnemonicParsing="false" onAction="#newAccount" text="Crear Cuenta" />
+   </children>
+</AnchorPane>
